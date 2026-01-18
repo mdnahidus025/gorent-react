@@ -14,7 +14,6 @@ const BlogTwo: React.FC = () => {
         <section className="blog-one" id="blog">
             <div className="blog-one__shape-1"></div>
             <div className="blog-one__shape-2"></div>
-
             <div className="container">
                 {/* Section Title */}
                 <div className="section-title text-left sec-title-animation animation-style2">
@@ -29,7 +28,6 @@ const BlogTwo: React.FC = () => {
 
                     </h2>
                 </div>
-
                 {/* Blog Carousel */}
                 <div className="blog-one__carousel owl-carousel owl-theme owl-loaded owl-drag">
                     <Swiper
@@ -65,7 +63,6 @@ const BlogTwo: React.FC = () => {
                                                 <span>{blog.month}</span>
                                             </div>
                                         </div>
-
                                         <div className="blog-one__content">
                                             <ul className="blog-one__meta list-unstyled">
                                                 <li>
@@ -81,13 +78,10 @@ const BlogTwo: React.FC = () => {
                                                     </Link>
                                                 </li>
                                             </ul>
-
                                             <h3 className="blog-one__title">
                                                 <Link to={blog.link}>{blog.title}</Link>
                                             </h3>
-
                                             <p className="blog-one__text">{blog.description}</p>
-
                                             <Link to={blog.link} className="blog-one__read-more">
                                                 Read More <span className="fas fa-arrow-right"></span>
                                             </Link>

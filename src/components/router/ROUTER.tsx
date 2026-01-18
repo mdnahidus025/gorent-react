@@ -69,6 +69,10 @@ const ROUTER = createBrowserRouter([
         element: <InnerLayout />,
         children: [
           {
+            path: "/inner",
+            element: <About />
+          },
+          {
             path: "about",
             element: <About />
           },

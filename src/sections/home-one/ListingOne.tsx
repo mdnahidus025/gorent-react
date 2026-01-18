@@ -5,7 +5,7 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import TextAnimation from '../../components/elements/TextAnimation';
 import type { ListingItem } from '../../all-content/listing/listType';
 import { listingData } from '../../all-content/listing/Lictingdata';
-
+import shapeTitleImg from "../../assets/images/shapes/section-title-tagline-shape-1.png";
 const tabButtons = [
     { id: "tesla", title: "Tesla" },
     { id: "honda", title: "Honda" },
@@ -30,7 +30,7 @@ const ListingOne: React.FC = () => {
                 <div className="section-title text-center sec-title-animation animation-style1">
                     <div className="section-title__tagline-box justify-content-center">
                         <div className="section-title__tagline-shape">
-                            <img src="assets/images/shapes/section-title-tagline-shape-1.png" alt="" />
+                            <img src={shapeTitleImg} alt="" />
                         </div>
                         <span className="section-title__tagline">Checkout our new cars</span>
                     </div>
