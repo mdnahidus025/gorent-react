@@ -17,7 +17,7 @@
 /*--------------------------------------------------------------
 # Common
 --------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Inter+Tight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import './bootstrap.min.css';
 @import './animate.min.css';
@@ -25,11 +25,6 @@
 @import './flaticon.css';
 @import './font-awesome-all.css';
 @import './nice-select.css';
-/* @import './jarallax.css';
-@import './jquery-ui.css';
-@import './jquery.magnific-popup.css';
-@import './timePicker.css';
-@import './twentytwenty.css'; */
 
 
 

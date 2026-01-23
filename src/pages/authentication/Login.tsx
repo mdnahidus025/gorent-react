@@ -1,28 +1,14 @@
 import React, { useState, type ChangeEvent, type FormEvent } from 'react';
 import Banner from '../../sections/common/Banner';
 import { Link } from 'react-router';
-interface LoginFormData {
-    email: string;
-    password: string;
-    rememberMe: boolean;
-}
+
 const Login: React.FC = () => {
     const [rememberMe, setRememberMe] = useState<boolean>(false);
-
     const handleLogin = (e: FormEvent<HTMLFormElement>): void => {
         e.preventDefault();
-
         const form = e.target as HTMLFormElement;
-        const formData = new FormData(form);
-
-        const loginData: LoginFormData = {
-            email: formData.get('form_email') as string,
-            password: formData.get('form_password') as string,
-            rememberMe: rememberMe
-        }; 
         form.reset();
     };
-
     const handleRememberMeChange = (e: ChangeEvent<HTMLInputElement>): void => {
         setRememberMe(e.target.checked);
     };
